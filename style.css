@@ -1,0 +1,52 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-shape {
+  box-sizing: border-box;
+  height: 300px;
+  width: 300px;
+  border-radius: 75px;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.inner-line {
+  height: 210px;
+  border: 20px solid white;
+  width: 210px;
+  border-radius: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  border: 25px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+.circle::after {
+  content: "";
+  height: 31px;
+  width: 30px;
+  position: absolute;
+  background-color: white;
+  right: -36px;
+  top: -36px;
+  border-radius: 100%;
+}
